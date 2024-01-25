@@ -1,9 +1,12 @@
-
-import InputField from "./components/input"
+import Button from "./components/button";
+import InputField from "./components/input";
+import ToggleVisibility from "./components/toggle";
 
 const App = () => {
   return (
-    <InputField/>
-  )
-}
-export default App
+    // <Button/>
+    // <InputField/>
+    <ToggleVisibility />
+  );
+};
+export default App;
