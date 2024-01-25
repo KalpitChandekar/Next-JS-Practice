@@ -1,7 +1,9 @@
-import Button from "./components/button";
+
+import InputField from "./components/input"
 
 const App = () => {
-  return <Button />;
-};
-
-export default App;
+  return (
+    <InputField/>
+  )
+}
+export default App
