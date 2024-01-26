@@ -1,6 +1,7 @@
 import Button from "./components/button";
+import ColorSwitcher from "./components/colorChanger";
 import InputField from "./components/input";
-import CharacterCounter from "./components/textArea";
+import CharacterCounter from "./components/charCounter";
 import ToggleVisibility from "./components/toggle";
 
 const App = () => {
@@ -8,7 +9,8 @@ const App = () => {
     // <Button/>
     // <InputField/>
     // <ToggleVisibility />
-    <CharacterCounter/>
+    // <CharacterCounter/>
+   <ColorSwitcher/>
   );
 };
 export default App;
