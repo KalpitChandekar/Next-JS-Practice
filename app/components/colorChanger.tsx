@@ -10,7 +10,7 @@ function ColorSwitcher() {
   return (
     <div className="ml-4  w-full h-screen  flex items-center justify-center">
       <select
-        className=" px-4 py-2 rounded-md font-semibold ml-2 "
+        className= "border-2 border-black px-4 py-2 rounded-md font-semibold ml-2 "
         onChange={handleColorChange}
       >
         <option value="">Select a color</option>
