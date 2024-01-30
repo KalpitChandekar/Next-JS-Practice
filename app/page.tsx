@@ -1,5 +1,9 @@
 "use client";
-import { useState, useEffect } from "react";
+
+import Button from "./components/button";
+import InputField from "./components/input";
+
+// import { useState, useEffect } from "react";
 
 // const usersData = [
 //   {
@@ -24,43 +28,41 @@ import { useState, useEffect } from "react";
 //   },
 // ];
 
-interface User {
-  id: number;
-  firstName: string;
-  lastName: string;
-  age: number;
-}
+// interface User {
+//   id: number;
+//   firstName: string;
+// }
 
 const Page = () => {
-  const [count, setCount] = useState<User[]>([]);
+  // const [count, setCount] = useState<User[]>([]);
+return(
+ <Button/>
+)
+  // useEffect(() => {
+  //   const getUsers = async () => {
+  //     const response = await fetch("https://dummyjson.com/users");
+  //     const data = await response.json();
+  //     console.log(data);
+  //     setCount(data.users);
+  //   };
+  //   getUsers();
+  // }, []);
 
-  useEffect(() => {
-    const getUsers = async () => {
-      const response = await fetch("https://dummyjson.com/users");
-      const data = await response.json();
-      console.log(data);
-      setCount(data.users);
-    };
-    getUsers();
-  }, []);
-
-  return (
-    <div className="flex flex-wrap items-center justify-center h-screen w-full">
-      {count?.map((user, index) => {
-        return (
-          <div
-            key={index}
-            className="border border-black p-4 m-4 rounded-lg bg-green-300"
-          >
-            <h1 className="text-xl">User</h1>
-            <p>ID:{user.id}</p>
-            <p>firstName:{user.firstName}</p>
-            <p>lastName:{user.lastName}</p>
-            <p>age:{user.age}</p>
-          </div>
-        );
-      })}
-    </div>
-  );
+  // return (
+  //   <div className="flex flex-wrap items-center justify-center h-screen w-full">
+  //     {count?.map((user, index) => {
+  //       return (
+  //         <div
+  //           key={index}
+  //           className="border border-black p-4 m-4 rounded-lg bg-green-300"
+  //         >
+  //           <h1 className="text-xl">User</h1>
+  //           <p>ID:{user.id}</p>
+  //           <p>firstName:{user.firstName}</p>
+  //         </div>
+  //       );
+  //     })}
+  //   </div>
+  // );
 };
 export default Page;
